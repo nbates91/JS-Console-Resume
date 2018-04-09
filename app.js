@@ -9,11 +9,12 @@ console.log(
 
 var interests = ['My family', 'My career', 'Learning to code'];
 
+console.log('Interests');
+
 function displayInterests() {
-	console.log('Interests');
-	console.log('* ' + interests[0]);
-	console.log('* ' + interests[1]);
-	console.log('* ' + interests[2]);
+	for (var i = 0; i < interests.length; i++) {
+		console.log('* ' + interests[i]);
+	}
 }
 displayInterests();
 
@@ -32,14 +33,14 @@ var position = [
 	},
 ];
 
+console.log('Work History');
+
 function displayPostion() {
-	console.log('Work History');
-	console.log('*Company: ' + position[0].name);
-	console.log('*Title: ' + position[0].jobTitle);
-	console.log('*Description: ' + position[0].descriptions);
-	console.log('*Company: ' + position[1].name);
-	console.log('*Title: ' + position[1].jobTitle);
-	console.log('*Description: ' + position[1].descriptions);
+	for (var i = 0; i < position.length; i++) {
+		console.log('*Company: ' + position[i].name);
+		console.log('*Title: ' + position[i].jobTitle);
+		console.log('*Description: ' + position[i].descriptions);
+	}
 }
 
 displayPostion();
@@ -68,4 +69,5 @@ function displaySkills() {
 		}
 	}
 }
+
 displaySkills();
